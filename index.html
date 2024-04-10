@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="imgContainer">
+        <img class="background" src="../image-projects/signUpForm/photo-1585202900225-6d3ac20a6962.avif" alt="">
+        <div class="behindLogo"><img class="overlayLogo" src="../image-projects/signUpForm/odin-lined.png" alt="sidebar picture"></div>       
+    </div>
+    <div class="BigRightContainer">
+        <div class="topMsg">
+            <h1>This is not a real online service! You know you need something like This
+                in your life to help you realize your deepest dreams.
+                <br>
+                Sign up <i>now</i> to get started.
+                <br>
+                <div class="span">
+                    <span>You <i>know</i> you want to. </span>     
+                </div>           
+            </h1>
+        </div>
+        <div class="main">
+            <h1 class="doThis">Let's do this!</h1>
+        <form action="" id="myForm" class="theForm">    
+        <div class="leftSide">
+            <div class="firstNameDiv">
+                <label for="firstName">FIRST NAME</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required>
+            </div>
+
+            <div class="emailDiv">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" placeholder="John@business.com" >
+            </div>
+
+            <div class="pwdDiv">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" placeholder="xxxxxx"required>
+            </div>
+        </div>    
+            <!--rightSide  -->
+            <div class="rightSide">
+                <div class="lastNameDiv">
+                    <label for="lasttName">LAST NAME</label>
+                    <input type="text" id="lasttName" name="lasttName" placeholder="Brigth" required>
+                </div>
+                
+                <div class="phoneDiv">
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="xxx-xxx-xxxx" pattern="\d{3}\d{3}\d{4}" required>
+                </div>
+                
+                <div class="confirmPwdDiv">
+                    <label for="confirmPwd">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmPassword" name="confirmPwd" placeholder="xxxxxx" required>
+                    <br>
+                    <span id="errorMessage"></span>
+                </div>
+            </div>                        
+        </form>
+        </div>      
+        <div class="bottomPart">
+            <button type="submit" form="myForm">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
+    
+</body>
+<script src="JavaS.js"></script>
+</html>
