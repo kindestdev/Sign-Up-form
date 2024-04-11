@@ -16,6 +16,7 @@
       return false; // Prevent form submission if passwords don't match
     } else {
       errorMessage.innerHTML = ""; // Clear any previous error message
+      document.getElementById("myForm").submit();
       return true;
     }
   }
