@@ -3,85 +3,85 @@ body,html{
     padding: 0;
     margin: 0;
     display: flex;
-    height: 101.6%;
-    
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: norse;
     src: url(./fonts/norse/Norsebold.otf);
-}
-@font-face {
+  }
+  @font-face {
     font-family: robototo;
     src: url(./fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
-}
-
-.bigRigthContainer{
+  }
+  
+  .bigRigthContainer{
     display: flex;
     flex-direction: column;
     height: 100%;
     box-sizing: border-box;
-}
-/* Top MSG content */
-.topMsg{
+  }
+  /* Top MSG content */
+  .topMsg{
     background-color: #e5e7eb6d;
     padding-top: 50px;
     display: flex;
     height: 40vh;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 40px;
     font-family: robototo;
     padding-bottom:10px ;
-}
-.topMsg h1{
+    flex-wrap: wrap;
+  }
+  .topMsg h1{
     width: 85%;
     font-family: robototo;
-
-}
-.span{
+  
+  }
+  .span{
     padding-top: 30px;
     font-family: robototo;
-
-}
-/* Form content */
-.main{
+  
+  }
+  /* Form content */
+  .main{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    height: 30vh;
     box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.1);
-    flex: 1;
     height: 35vh;
     font-family: robototo;
-
-}
-.doThis{
+    flex-wrap: wrap;
+    flex: 1;
+  
+  }
+  .doThis{
     padding-left: 40px;
         font-family: robototo;
-
-}
-
-.theForm{
+  
+  }
+  
+  .theForm{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
-    width: 100%;
+    flex-wrap: wrap;
     
-
-}
-.leftSide,.rightSide{
+  
+  }
+  .leftSide,.rightSide{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 40%;
     gap: 15px;
     padding-left: 30px;
-}
-.main input{
-    width:90%;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .main input{
     font-size: 15px;
     padding: 10px;
     border-color: #E5E7EB;
@@ -89,49 +89,51 @@ body,html{
     border-radius: 5px;
     border-style: solid;
     font-family: robototo;
-
-
-}
-
-.main input:invalid{
+  
+  
+  }
+  
+  .main input:invalid{
     border-bottom:2px solid rgba(255, 0, 0, 0.443);
-}
-.main input:hover{
+  }
+  .main input:hover{
     background-color: rgba(227, 227, 227, 0.539);
-}
-
-.main input:focus{
+  }
+  
+  .main input:focus{
     border:2px rgb(191, 255, 0) solid;
     background-color: rgba(227, 227, 227, 0.539);
-}
-.main input:valid{
+  }
+  .main input:valid{
     border-bottom:green;
     border-width: 2px;
     border-style: solid;
-}
-
-.firstNameDiv,.emailDiv,.pwdDiv,.lastNameDiv,.phoneDiv,.confirmPwdDiv{
+  }
+  
+  .firstNameDiv,.emailDiv,.pwdDiv,.lastNameDiv,.phoneDiv,.confirmPwdDiv{
     display: flex;
     flex-direction: column;
-    width: 70%;
-}
-.confirmPwdDiv{
+    flex: 1;
+  }
+  .confirmPwdDiv{
     position: relative;
     padding-bottom: 0;
     margin-bottom: 0;
     line-height: .8;
-    
-}
-
-input{
+  }
+  .confirmPwdDiv span{
+    font-size: 14px;
+  }
+  
+  input{
     font-size: 100%;
     margin: 0;
     max-width: 100%;
     vertical-align: baseline;
-}
-
-/* bottom part */
-.bottomPart{
+  }
+  
+  /* bottom part */
+  .bottomPart{
     background-color: #e5e7eb6d;
     display: flex;
     flex-direction: column;
@@ -141,8 +143,9 @@ input{
     height: 20vh;
     box-sizing: border-box;
     font-family: robototo;
-}
-.bottomPart button{
+    flex-wrap: wrap;
+  }
+  .bottomPart button{
     height: 50px;
     width: 20%;
     background-color: #596D48;
@@ -150,58 +153,79 @@ input{
     font-size: 16px;
     border-radius: 10px;
     font-family: robototo;
-
-}
-.bottomPart button:hover{
+  
+  }
+  .bottomPart button:hover{
     background-color: #6d8658dc;
-}
-.bottomPart a{
+  }
+  .bottomPart a{
     text-decoration: none;
     color: #596D48;
-}
-
-/* sidebar(leftSide) */
-
-.imgContainer{
-position: relative;
-width: 100vh;
-height: 100%;
-}
-
-.imgContainer .background{
+  }
+  
+  /* sidebar(leftSide) */
+  
+  .imgContainer{
+  display: flex;
+  width: 100vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  
+  }
+  
+  .imgContainer .background{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-grow: 1;
     object-fit: cover;
-}
-.overlayLogo{
-    position: absolute;
-    top: 50%;
-    left: 32%;
-    transform: translate(-50%, -50%);
+  }
+  
+  .behindLogo{
+  height: 30vh;
+  min-height: 30vh;
+  max-height: 55vh;
+  width: 100%;
+  top: 15.3%;
+  background-color: rgba(0, 0, 0, 0.38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: norse;
+  margin-top: 16.4vh;
+  flex-wrap:wrap ;
+  flex: 1;
+  
+  }
+  .behindLogo p{
+    font-size: 150px;
+    color: white;
+    margin: 0;
+    width: 200px;
+    padding: 0;
+  
+  }
+  /* inventando */
+  .backgroundImg{
+    width: 100%;
+    background-image: url(../../projects/image-projects/signUpForm/photo-1585202900225-6d3ac20a6962.avif);
+    background-size: cover;
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+  .overlayLogo{
     height: 25vh;
     width: auto;
-    padding-right: 15px;
-}
-.behindLogo{
-position: absolute;
-height: 30vh;
-width: 100%;
-top: 15.3%;
-background-color: rgba(0, 0, 0, 0.38);
-display: flex;
-align-items: center;
-justify-content: center;
-font-family: norse;
-}
-.behindLogo p{
-    font-size: 150px;
-    position: relative;
-    left: 21%;
-    color: white;
-    padding-left: 15px;
-}
+  }
+
+  .wrongPwd{
+    background-color: red;
+  }
